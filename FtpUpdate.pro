@@ -41,6 +41,7 @@ QMAKE_LIBDIR += $${ROOT}/lib
 LIBS += libboost_system-vc141-mt-x64-1_67.lib
 LIBS += libboost_thread-vc141-mt-x64-1_67.lib
 
+RC_FILE = app.rc
 
 SOURCES += main.cpp\
     update.cpp \

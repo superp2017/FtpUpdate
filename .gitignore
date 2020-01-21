@@ -46,7 +46,6 @@ moc_*.cpp
 ui_*.h
 qrc_*.cpp
 Thumbs.db
-*.res
 *.rc
 /.qmake.cache
 /.qmake.stash
@@ -80,11 +79,6 @@ Thumbs.db
 
 # Python byte code
 *.pyc
-
-*.log
-*.7z
-*.zip
-*.rar
 *.user
 *.tif
 bin/data/terrain/*.tif
