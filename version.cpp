@@ -95,7 +95,7 @@ VersionInfo Version::versionInfo() const
 void Version::loadVersion()
 {
     QSettings m_settings(QApplication::applicationDirPath()+"/VERSION",QSettings::IniFormat);
-    m_settings.setIniCodec("uft-8");
+    m_settings.setIniCodec("utf-8");
     m_settings.beginGroup("VERSION");
     m_cur_ver.Version = m_settings.value("Version").toString();
     m_cur_ver.Date = m_settings.value("Date").toString();
@@ -106,7 +106,7 @@ void Version::loadVersion()
 void Version::saveVersion()
 {
     QSettings m_settings(QApplication::applicationDirPath()+"/VERSION",QSettings::IniFormat);
-    m_settings.setIniCodec("uft-8");
+    m_settings.setIniCodec("utf-8");
     m_settings.beginGroup("VERSION");
     m_settings.setValue("Version",m_cur_ver.Version);
     m_settings.setValue("Date",m_cur_ver.Date);
